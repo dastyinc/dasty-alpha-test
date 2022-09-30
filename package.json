@@ -1,0 +1,20 @@
+{
+  "name": "dasty-alpha-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "hogun kim",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "peer": "^0.6.1",
+    "socket.io": "^4.1.2",
+    "uuid": "^8.3.2"
+  }
+}
